@@ -13,7 +13,7 @@ Feel free to look within the header for API definitions. To include this library
 
 The `#include` line should be placed in any C files that will use this library's functions. The `#define` line should only be used once in all of your project files, ideally in a file that isn't recompiled often.
 
-For those who are interested, is a rough grammar for a `cver` string:
+For those who are interested, here is a rough grammar for a `cver` string:
 
 ```
 version = number , "." , number , "." , number ;
