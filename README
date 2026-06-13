@@ -2,4 +2,19 @@
 
 [semver]: https://semver.org/
 
-This library provides functions for comparing two version strings, specifically the "major", "minor", and "patch" portions of a version string adhering to [semver]. Other parts of the [semver] standard (pre-release identifiers, build identifiers, etc) are ignored.
+This library provides functions for comparing two version strings, specifically the "major", "minor", and "patch" portions of a version string adhering to [semver]. Other parts of the [semver] standard (pre-release identifiers, build identifiers, etc) are not used.
+
+Feel free to look within the header for API definitions.
+
+For those who are interested, is a rough grammar for a `cver` string:
+
+```
+version = number , "." , number , "." , number ;
+
+(* NOTE: number must be between 0 and 255 *)
+number = "0"
+       | positive , { digit } ;
+
+digit = "0" | positive ;
+positive = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+```
