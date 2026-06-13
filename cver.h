@@ -5,6 +5,8 @@
 #include <stdint.h>
 #include <limits.h>
 
+#define CVER_VERSION "0.1.0"
+
 // a struct for easily representing parsed version strings
 typedef struct {
   uint8_t major; // these each have a max value of 255
